@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="BmpApp">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>My Web Dev Tastes</title>
+    <meta name="title" content="Why the Web" />
+    <meta name="description" content="This is a simple app to demonstrate why I love the Web">
+    <meta name="subject" content="Angular, CSS, Front-End" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="Angular, CSS, Front-End" />
+    <meta property="og:title" content="Why the Web"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:description" content="This is a simple app to demonstrate why I love the Web"/>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/mq.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/fonts/fonts.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/btns.css" media="all" />
+</head>
+  <body>
+	<div ng-view></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
+    <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+	<script src='https://cdn.firebase.com/libs/angularfire/0.3.0/angularfire.min.js'></script>
+	<script src='js/init.js'></script>
+	<script src='js/config.js'></script>
+	<script src='js/filters.js'></script>
+	<script src='js/controllers/initctrl.js'></script>
+	<script src='js/controllers/cssctrl.js'></script>
+	<script src='js/controllers/angularctrl.js'></script>
+  </body>
+</html>

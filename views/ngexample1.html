@@ -1,0 +1,22 @@
+<div class="wrapper">
+	<div class="container">
+		<div class="content">
+			<div ng-controller="AngularCtrl">
+				<h2 class="h2-red">~ ANGULAR</h2>
+
+				<div class="ng-example1">
+					<input type="text" class="inputText" ng-model="data" placeholder="Write some text here">
+					<div class="tooltip tooltip-red">
+						<div class="triangle-tooltip red-triangle"></div>
+						<p class="resize-tip">Useful tip: If you write a sentence that contains the word "CHANGE" you can have the best of both worlds: CSS selectors + Angular. It's amazing how simple it is to make use of an Angular feature called Two-Way Data Binding. No bootstrap code at all.</p>
+					</div>
+					<p rel="{{ data }}">{{ data }}</p>
+
+					<div class="btnwrapper btnwrapper-2">
+						<a href="#!/angular/examples/2" class="btn btn3 btn-3 btn-3a">MORE EXAMPLES!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
