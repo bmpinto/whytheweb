@@ -9,7 +9,7 @@ window.app.controller('AngularCtrl', function($scope, angularFire){
     $scope.addMessage = function(e){
 		if (e.keyCode != 13) return;
 		
-		if( $scope.msg !== "" ) {
+		if( $scope.msg != "" ) {
       		$scope.messages.push({ body: $scope.msg });
     		$scope.msg = "";
     	}
