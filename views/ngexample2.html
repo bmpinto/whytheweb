@@ -1,0 +1,25 @@
+<div class="wrapper">
+	<div class="container">
+		<div class="content">
+			<div ng-controller="AngularCtrl">
+				<h2 class="h2-red">~ ANGULAR</h2>
+
+				<div class="ng-example2">
+					<input type="text" class="inputText" ng-model="msg" ng-keydown="addMessage($event)" placeholder="Write some text here">
+					<div class="tooltip tooltip-red">
+						<div class="triangle-tooltip red-triangle"></div>
+						<p class="resize-tip">Useful tip: Write something and "CLICK ENTER" to append to the list, then reload the page. I'm using a "real-time back-end" tool for Angular, called<br> Angular-Firebase. There are already 2 examples added. Add to the list!</p>
+					</div>
+
+					<ul class="messagesList">
+						<li ng-repeat="msg in messages | reverse">{{msg.body}}</li>
+					</ul>
+
+					<div class="btnwrapper btnwrapper-2" style="margin-top: 50px;">
+						<a href="#!/end" class="btn btn3 btn-3 btn-3a">OH! NOW I KNOW</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
