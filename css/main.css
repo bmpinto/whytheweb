@@ -1,0 +1,841 @@
+html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body{ 
+	color: white;
+	font-family: Arial, Helvetica;
+	margin: 0;
+	padding: 0;
+	width: inherit;
+	height: inherit;
+}
+
+.wrapper{
+	height: 100%;
+	position: relative;
+}
+
+	.container{
+		margin: 0 auto;
+		width: 600px;
+	}
+
+	.content{
+		position: relative;
+		float: left;
+		padding: 50px 10px;
+	}
+
+		.whycss{
+			width: 500px;
+			height: 300px;
+			padding: 20px 10px;
+			background: green;
+			color: white;
+			text-align: center;
+		}
+
+h1{
+	font-size: 75px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: -7px;
+	margin: 10px 0 0;
+}
+
+h2{
+	font-size: 70px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: -5px;
+	margin: -30px 0 50px;
+}
+
+.h2-green{ color: #27ae60; }
+.h2-red{ color: #c0392b; }
+
+h3{
+	opacity: 0;
+    font-size: 30px;
+    border-radius: 15px;
+	margin: 40px 0 80px;
+	letter-spacing: -2px;
+	padding: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	border-left: 10px solid #27ae60;
+	border-right: 10px solid #27ae60;
+	-webkit-animation-name: slideAndFade;
+	-webkit-animation-duration: 1s;
+ 	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-fill-mode: forwards; 
+ 	-webkit-animation-delay: .5s;
+
+ 	-moz-animation-name: slideAndFade;
+	-moz-animation-duration: 1s;
+ 	-moz-animation-iteration-count: 1;
+ 	-moz-animation-fill-mode: forwards; 
+ 	-moz-animation-delay: .5s;
+
+ 	-o-animation-name: slideAndFade;
+	-o-animation-duration: 1s;
+ 	-o-animation-iteration-count: 1;
+ 	-o-animation-fill-mode: forwards; 
+ 	-o-animation-delay: .5s;
+
+ 	animation-name: slideAndFade;
+	animation-duration: 1s;
+ 	animation-iteration-count: 1;
+ 	animation-fill-mode: forwards; 
+ 	animation-delay: .5s;
+}
+
+a{ text-decoration: none; }
+
+.initial{ margin-top: 50px; }
+
+.initial-tease{
+	font-family: 'existencelight', Arial, sans-serif;
+	font-size: 45px;
+	margin: 0;
+}
+
+.slideDown{
+	opacity: 0;
+	-webkit-animation-name: slideDown;
+	-webkit-animation-duration: 1s;
+ 	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-fill-mode: forwards; 
+ 	-webkit-animation-delay: .5s;
+
+ 	-moz-animation-name: slideDown;
+	-moz-animation-duration: 1s;
+ 	-moz-animation-iteration-count: 1;
+ 	-moz-animation-fill-mode: forwards; 
+ 	-moz-animation-delay: .5s;
+
+ 	-o-animation-name: slideDown;
+	-o-animation-duration: 1s;
+ 	-o-animation-iteration-count: 1;
+ 	-o-animation-fill-mode: forwards; 
+ 	-o-animation-delay: .5s;
+
+ 	animation-name: slideDown;
+	animation-duration: 1s;
+ 	animation-iteration-count: 1;
+ 	animation-fill-mode: forwards; 
+ 	animation-delay: .5s;
+}
+
+.slideUp{
+	opacity: 0;
+	-webkit-animation-name: slideUp;
+	-webkit-animation-duration: 1s;
+ 	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-fill-mode: forwards; 
+ 	-webkit-animation-delay: 1s;
+
+ 	-moz-animation-name: slideUp;
+	-moz-animation-duration: 1s;
+ 	-moz-animation-iteration-count: 1;
+ 	-moz-animation-fill-mode: forwards; 
+ 	-moz-animation-delay: 1s;
+
+ 	-o-animation-name: slideUp;
+	-o-animation-duration: 1s;
+ 	-o-animation-iteration-count: 1;
+ 	-o-animation-fill-mode: forwards; 
+ 	-o-animation-delay: 1s;
+
+ 	animation-name: slideUp;
+	animation-duration: 1s;
+ 	animation-iteration-count: 1;
+ 	animation-fill-mode: forwards; 
+ 	animation-delay: 1s;
+}
+
+.slideLeft{
+	opacity: 0;
+	-webkit-animation-name: slideLeft;
+	-webkit-animation-duration: 1s;
+ 	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-fill-mode: forwards; 
+ 	-webkit-animation-delay: 1.5s;
+
+ 	-moz-animation-name: slideLeft;
+	-moz-animation-duration: 1s;
+ 	-moz-animation-iteration-count: 1;
+ 	-moz-animation-fill-mode: forwards; 
+ 	-moz-animation-delay: 1.5s;
+
+ 	-o-animation-name: slideLeft;
+	-o-animation-duration: 1s;
+ 	-o-animation-iteration-count: 1;
+ 	-o-animation-fill-mode: forwards; 
+ 	-o-animation-delay: 1.5s;
+
+ 	animation-name: slideLeft;
+	animation-duration: 1s;
+ 	animation-iteration-count: 1;
+ 	animation-fill-mode: forwards; 
+ 	animation-delay: 1.5s;
+}
+
+.slideRight{
+	opacity: 0;
+	-webkit-animation-name: slideRight;
+	-webkit-animation-duration: 1s;
+ 	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-fill-mode: forwards; 
+ 	-webkit-animation-delay: 2s;
+
+ 	-moz-animation-name: slideRight;
+	-moz-animation-duration: 1s;
+ 	-moz-animation-iteration-count: 1;
+ 	-moz-animation-fill-mode: forwards; 
+ 	-moz-animation-delay: 2s;
+
+ 	-o-animation-name: slideRight;
+	-o-animation-duration: 1s;
+ 	-o-animation-iteration-count: 1;
+ 	-o-animation-fill-mode: forwards; 
+ 	-o-animation-delay: 2s;
+
+ 	animation-name: slideRight;
+	animation-duration: 1s;
+ 	animation-iteration-count: 1;
+ 	animation-fill-mode: forwards; 
+ 	animation-delay: 2s;
+}
+
+
+
+@-webkit-keyframes slideDown {
+	0%   { margin-top: -60px; opacity: 0; }
+	100% { margin-top: 0; opacity: 1; }
+}
+
+@-moz-keyframes slideDown {
+	0%   { margin-top: -60px; opacity: 0; }
+	100% { margin-top: 0; opacity: 1; }
+}
+
+@-o-keyframes slideDown {
+	0%   { margin-top: -60px; opacity: 0; }
+	100% { margin-top: 0; opacity: 1; }
+}
+
+@keyframes slideDown {
+	0%   { margin-top: -60px; opacity: 0; }
+	100% { margin-top: 0; opacity: 1; }
+}
+
+@-webkit-keyframes slideUp {
+	0%   { margin-top: 60px; opacity: 0; }
+	100% { margin-top: 0; opacity: 1; }
+}
+
+@-moz-keyframes slideUp {
+	0%   { margin-top: 60px; opacity: 0; }
+	100% { margin-top: 0; opacity: 1; }
+}
+
+@-o-keyframes slideUp {
+	0%   { margin-top: 60px; opacity: 0; }
+	100% { margin-top: 0; opacity: 1; }
+}
+
+@keyframes slideUp {
+	0%   { margin-top: 60px; opacity: 0; }
+	100% { margin-top: 0; opacity: 1; }
+}
+
+@-webkit-keyframes slideLeft {
+	0%   { margin-left: -60px; opacity: 0; }
+	100% { margin-left: 0; opacity: 1; }
+}
+
+@-moz-keyframes slideLeft {
+	0%   { margin-left: -60px; opacity: 0; }
+	100% { margin-left: 0; opacity: 1; }
+}
+
+@-o-keyframes slideLeft {
+	0%   { margin-left: -60px; opacity: 0; }
+	100% { margin-left: 0; opacity: 1; }
+}
+
+@keyframes slideLeft {
+	0%   { margin-left: -60px; opacity: 0; }
+	100% { margin-left: 0; opacity: 1; }
+}
+
+@-webkit-keyframes slideRight {
+	0%   { padding-left: -30px; opacity: 0; }
+	100% { padding-left: 0; opacity: 1; }
+}
+
+@-moz-keyframes slideRight {
+	0%   { padding-left: -30px; opacity: 0; }
+	100% { padding-left: 0; opacity: 1; }
+}
+
+@-o-keyframes slideRight {
+	0%   { padding-left: -30px; opacity: 0; }
+	100% { padding-left: 0; opacity: 1; }
+}
+
+@keyframes slideRight {
+	0%   { padding-left: -30px; opacity: 0; }
+	100% { padding-left: 0; opacity: 1; }
+}
+
+.faded{
+	opacity: 0;
+	-webkit-animation-name: letsFadeIn;
+	-webkit-animation-duration: 1s;
+ 	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-fill-mode: forwards; 
+ 	-webkit-animation-delay: 3s;
+
+ 	-moz-animation-name: letsFadeIn;
+	-moz-animation-duration: 1s;
+ 	-moz-animation-iteration-count: 1;
+ 	-moz-animation-fill-mode: forwards; 
+ 	-moz-animation-delay: 3s;
+
+ 	-o-animation-name: letsFadeIn;
+	-o-animation-duration: 1s;
+ 	-o-animation-iteration-count: 1;
+ 	-o-animation-fill-mode: forwards; 
+ 	-o-animation-delay: 3s;
+
+ 	animation-name: letsFadeIn;
+	animation-duration: 1s;
+ 	animation-iteration-count: 1;
+ 	animation-fill-mode: forwards; 
+ 	animation-delay: 3s;
+}
+
+.tooltip-green{ background: #27ae60; }
+.tooltip-red{ background: #c0392b; }
+.tooltip{
+	opacity: 0;
+	position: relative;
+	width: 100%;
+	padding: 10px 0px 10px 15px;
+	border-radius: 10px;
+	color: #FFFFFF;
+	font-family: 'existencelight';
+	-webkit-animation-name: slideAndFade;
+	-webkit-animation-duration: 1s;
+ 	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-fill-mode: forwards; 
+ 	-webkit-animation-delay: .5s;
+
+ 	-moz-animation-name: slideAndFade;
+	-moz-animation-duration: 1s;
+ 	-moz-animation-iteration-count: 1;
+ 	-moz-animation-fill-mode: forwards; 
+ 	-moz-animation-delay: .5s;
+
+ 	-o-animation-name: slideAndFade;
+	-o-animation-duration: 1s;
+ 	-o-animation-iteration-count: 1;
+ 	-o-animation-fill-mode: forwards; 
+ 	-o-animation-delay: .5s;
+
+ 	animation-name: slideAndFade;
+	animation-duration: 1s;
+ 	animation-iteration-count: 1;
+ 	animation-fill-mode: forwards; 
+ 	animation-delay: .5s;
+}
+
+@-webkit-keyframes slideAndFade {
+  0%   { margin-top: -60px; opacity: 0; }
+  100% { margin-top: 0px; opacity: 1; }
+}
+
+@-moz-keyframes slideAndFade {
+  0%   { margin-top: -60px; opacity: 0; }
+  100% { margin-top: 0px; opacity: 1; }
+}
+
+@-o-keyframes slideAndFade {
+  0%   { margin-top: -60px; opacity: 0; }
+  100% { margin-top: 0px; opacity: 1; }
+}
+
+@keyframes slideAndFade {
+  0%   { margin-top: -60px; opacity: 0; }
+  100% { margin-top: 0px; opacity: 1; }
+}
+
+.green-triangle{ border-bottom: 15px solid #27ae60; }
+.red-triangle{ border-bottom: 15px solid #c0392b; }
+.triangle-tooltip{
+	position: absolute;
+    width: 0;    
+    height: 0;    
+    border-left: 15px solid transparent;   
+    border-right: 15px solid transparent;      
+    top: -15px;
+    left: 15px;
+}
+
+.resize-tip{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.why-css-wrapper{ 
+	position: relative;
+	margin-top: -20px; 
+	opacity: 0; 
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+.why-css-container { 
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-o-perspective: 1000;
+	perspective: 1000; 
+}
+
+.why-css-container:hover .why-css-flipper, .why-css-container.hover .why-css-flipper {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.why-css-container, .why-css-front, .why-css-back {
+	width: 350px;
+	height: 320px;
+	padding: 20px;
+}
+
+.why-css-flipper {
+	-webkit-transition: 0.6s;
+	-moz-transition: 0.6s;
+	-o-transition: 0.6s;
+	transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.why-css-front, .why-css-back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	background: #27ae60;
+	font-family: 'existencelight';
+	font-size: 17px;
+}
+
+.why-css-front { z-index: 2; }
+	.overweight{ font-weight: bolder; }
+	.css-list{ color: rgb(147, 252, 191); }
+	.img-hoverdiv{ position: absolute; top: -60px; right: 20px; }
+
+.why-css-back { 
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg); 
+	margin-left: -30px; 
+}
+	.why-css-back p{ margin: 0; }
+
+
+.ng-tooltip{
+	opacity: 0;
+	position: absolute;
+	top: 100px;
+	background: #c0392b;
+	width: 500px;
+	padding: 10px 0px 10px 0px;
+	margin: -10px 0 50px;
+	border-radius: 10px;
+	color: #FFFFFF;
+	text-align: center;
+	font-family: 'existencelight';
+	-webkit-animation-name: ng-slideAndFade;
+	-webkit-animation-duration: 4s;
+ 	-webkit-animation-iteration-count: 1; 
+ 	-webkit-animation-delay: .5s;
+
+ 	-moz-animation-name: ng-slideAndFade;
+	-moz-animation-duration: 4s;
+ 	-moz-animation-iteration-count: 1; 
+ 	-moz-animation-delay: .5s;
+
+ 	-o-animation-name: ng-slideAndFade;
+	-o-animation-duration: 4s;
+ 	-o-animation-iteration-count: 1; 
+ 	-o-animation-delay: .5s;
+
+ 	animation-name: ng-slideAndFade;
+	animation-duration: 4s;
+ 	animation-iteration-count: 1; 
+ 	animation-delay: .5s;
+}
+
+@-webkit-keyframes ng-slideAndFade {
+  0%   { top: 100px; opacity: 0; }
+  50% { top: 120px; opacity: 1; }
+  100% { top: 100px; opacity: 0; display: none; }
+}
+
+@-moz-keyframes ng-slideAndFade {
+  0%   { top: 100px; opacity: 0; }
+  50% { top: 120px; opacity: 1; }
+  100% { top: 100px; opacity: 0; display: none; }
+}
+
+@-o-keyframes ng-slideAndFade {
+  0%   { top: 100px; opacity: 0; }
+  50% { top: 120px; opacity: 1; }
+  100% { top: 100px; opacity: 0; display: none; }
+}
+
+@keyframes ng-slideAndFade {
+  0%   { top: 100px; opacity: 0; }
+  50% { top: 120px; opacity: 1; }
+  100% { top: 100px; opacity: 0; display: none; }
+}
+
+.angular-features{
+	margin-top: 50px;
+	font-family: 'existencelight';
+	font-size: 15px;
+}
+	.black{ color: black; }
+
+	.angular-features p{
+		opacity: 0;
+		-webkit-animation-name: slideAndFade;
+		-webkit-animation-duration: 1s;
+	 	-webkit-animation-iteration-count: 1;
+	 	-webkit-animation-fill-mode: forwards; 
+	 	-webkit-animation-delay: 4s;
+
+	 	-moz-animation-name: slideAndFade;
+		-moz-animation-duration: 1s;
+	 	-moz-animation-iteration-count: 1;
+	 	-moz-animation-fill-mode: forwards; 
+	 	-moz-animation-delay: 4s;
+
+	 	-o-animation-name: slideAndFade;
+		-o-animation-duration: 1s;
+	 	-o-animation-iteration-count: 1;
+	 	-o-animation-fill-mode: forwards; 
+	 	-o-animation-delay: 4s;
+
+	 	animation-name: slideAndFade;
+		animation-duration: 1s;
+	 	animation-iteration-count: 1;
+	 	animation-fill-mode: forwards; 
+	 	animation-delay: 4s;
+	}
+
+	.angular-features h1{
+		opacity: 0;
+		-webkit-animation-name: slideAndFade;
+		-webkit-animation-duration: 1s;
+	 	-webkit-animation-iteration-count: 1;
+	 	-webkit-animation-fill-mode: forwards; 
+	 	-webkit-animation-delay: 4.5s;
+
+	 	-moz-animation-name: slideAndFade;
+		-moz-animation-duration: 1s;
+	 	-moz-animation-iteration-count: 1;
+	 	-moz-animation-fill-mode: forwards; 
+	 	-moz-animation-delay: 4.5s;
+
+	 	-o-animation-name: slideAndFade;
+		-o-animation-duration: 1s;
+	 	-o-animation-iteration-count: 1;
+	 	-o-animation-fill-mode: forwards; 
+	 	-o-animation-delay: 4.5s;
+
+	 	animation-name: slideAndFade;
+		animation-duration: 1s;
+	 	animation-iteration-count: 1;
+	 	animation-fill-mode: forwards; 
+	 	animation-delay: 4.5s;
+	}
+
+	.ng-mvc{
+		opacity: 0;
+		-webkit-animation-name: leftFaded;
+		-webkit-animation-duration: 1s;
+	 	-webkit-animation-iteration-count: 1;
+	 	-webkit-animation-fill-mode: forwards; 
+	 	-webkit-animation-delay: 5s;
+
+	 	-moz-animation-name: leftFaded;
+		-moz-animation-duration: 1s;
+	 	-moz-animation-iteration-count: 1;
+	 	-moz-animation-fill-mode: forwards; 
+	 	-moz-animation-delay: 5s;
+
+	 	-o-animation-name: leftFaded;
+		-o-animation-duration: 1s;
+	 	-o-animation-iteration-count: 1;
+	 	-o-animation-fill-mode: forwards; 
+	 	-o-animation-delay: 5s;
+
+	 	animation-name: leftFaded;
+		animation-duration: 1s;
+	 	animation-iteration-count: 1;
+	 	animation-fill-mode: forwards; 
+	 	animation-delay: 5s;
+	}
+
+	.ng-ditesting{
+		opacity: 0;
+		-webkit-animation-name: leftFaded;
+		-webkit-animation-duration: 1s;
+	 	-webkit-animation-iteration-count: 1;
+	 	-webkit-animation-fill-mode: forwards; 
+	 	-webkit-animation-delay: 5.5s;
+
+	 	-moz-animation-name: leftFaded;
+		-moz-animation-duration: 1s;
+	 	-moz-animation-iteration-count: 1;
+	 	-moz-animation-fill-mode: forwards; 
+	 	-moz-animation-delay: 5.5s;
+
+	 	-o-animation-name: leftFaded;
+		-o-animation-duration: 1s;
+	 	-o-animation-iteration-count: 1;
+	 	-o-animation-fill-mode: forwards; 
+	 	-o-animation-delay: 5.5s;
+
+	 	animation-name: leftFaded;
+		animation-duration: 1s;
+	 	animation-iteration-count: 1;
+	 	animation-fill-mode: forwards; 
+	 	animation-delay: 5.5s;
+	}
+
+	.ng-directives{
+		opacity: 0;
+		-webkit-animation-name: leftFaded;
+		-webkit-animation-duration: 1s;
+	 	-webkit-animation-iteration-count: 1;
+	 	-webkit-animation-fill-mode: forwards; 
+	 	-webkit-animation-delay: 6s;
+
+	 	-moz-animation-name: leftFaded;
+		-moz-animation-duration: 1s;
+	 	-moz-animation-iteration-count: 1;
+	 	-moz-animation-fill-mode: forwards; 
+	 	-moz-animation-delay: 6s;
+
+	 	-o-animation-name: leftFaded;
+		-o-animation-duration: 1s;
+	 	-o-animation-iteration-count: 1;
+	 	-o-animation-fill-mode: forwards; 
+	 	-o-animation-delay: 6s;
+
+	 	animation-name: leftFaded;
+		animation-duration: 1s;
+	 	animation-iteration-count: 1;
+	 	animation-fill-mode: forwards; 
+	 	animation-delay: 6s;
+	}
+
+
+	@-webkit-keyframes leftFaded {
+	  0%   { margin-left: -100px; opacity: 1; }
+	  100% { margin-left: 0; opacity: 1; }
+	}
+
+	@-moz-keyframes leftFaded {
+	  0%   { margin-left: -100px; opacity: 1; }
+	  100% { margin-left: 0; opacity: 1; }
+	}
+
+	@-o-keyframes leftFaded {
+	  0%   { margin-left: -100px; opacity: 1; }
+	  100% { margin-left: 0; opacity: 1; }
+	}
+
+	@keyframes leftFaded {
+	  0%   { margin-left: -100px; opacity: 1; }
+	  100% { margin-left: 0; opacity: 1; }
+	}
+
+
+.inputText{
+	width: 500px;
+	padding: 10px;
+	background: #e74c3c;
+	color: #c0392b;
+	border: 0;
+	border-bottom: 2px solid #c0392b;
+	font-size: 45px;
+	outline: none;
+}
+
+.messagesList{
+	opacity: 0;
+	-webkit-animation-name: leftFaded;
+	-webkit-animation-duration: 1s;
+ 	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-fill-mode: forwards; 
+ 	-webkit-animation-delay: 1s;
+
+ 	-moz-animation-name: leftFaded;
+	-moz-animation-duration: 1s;
+ 	-moz-animation-iteration-count: 1;
+ 	-moz-animation-fill-mode: forwards; 
+ 	-moz-animation-delay: 1s;
+
+ 	-o-animation-name: leftFaded;
+	-o-animation-duration: 1s;
+ 	-o-animation-iteration-count: 1;
+ 	-o-animation-fill-mode: forwards; 
+ 	-o-animation-delay: 1s;
+
+ 	animation-name: leftFaded;
+	animation-duration: 1s;
+ 	animation-iteration-count: 1;
+ 	animation-fill-mode: forwards; 
+ 	animation-delay: 1s;
+}
+
+::-webkit-input-placeholder { color: #c0392b; }
+:-moz-placeholder { color: #c0392b; }
+::-moz-placeholder { color: #c0392b; }
+:-ms-input-placeholder { color: #c0392b; }
+
+p[rel*="change"] { 
+	text-shadow: 3px 3px black; 
+	font-family: 'existencelight';
+	text-transform: uppercase;
+	font-size: 50px;
+	margin: 0;
+}
+
+.patience{
+	opacity: 0;
+	-webkit-animation-name: letsFadeIn;
+	-webkit-animation-duration: 1s;
+ 	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-fill-mode: forwards; 
+ 	-webkit-animation-delay: .5s;
+
+ 	-moz-animation-name: letsFadeIn;
+	-moz-animation-duration: 1s;
+ 	-moz-animation-iteration-count: 1;
+ 	-moz-animation-fill-mode: forwards; 
+ 	-moz-animation-delay: .5s;
+
+ 	-o-animation-name: letsFadeIn;
+	-o-animation-duration: 1s;
+ 	-o-animation-iteration-count: 1;
+ 	-o-animation-fill-mode: forwards; 
+ 	-o-animation-delay: .5s;
+
+ 	animation-name: letsFadeIn;
+	animation-duration: 1s;
+ 	animation-iteration-count: 1;
+ 	animation-fill-mode: forwards; 
+ 	animation-delay: .5s;
+}
+
+.likedExperience{
+	opacity: 0;
+	-webkit-animation-name: letsFadeIn;
+	-webkit-animation-duration: 1s;
+ 	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-fill-mode: forwards; 
+ 	-webkit-animation-delay: 1s;
+
+ 	-moz-animation-name: letsFadeIn;
+	-moz-animation-duration: 1s;
+ 	-moz-animation-iteration-count: 1;
+ 	-moz-animation-fill-mode: forwards; 
+ 	-moz-animation-delay: 1s;
+
+ 	-o-animation-name: letsFadeIn;
+	-o-animation-duration: 1s;
+ 	-o-animation-iteration-count: 1;
+ 	-o-animation-fill-mode: forwards; 
+ 	-o-animation-delay: 1s;
+
+ 	animation-name: letsFadeIn;
+	animation-duration: 1s;
+ 	animation-iteration-count: 1;
+ 	animation-fill-mode: forwards; 
+ 	animation-delay: 1s;
+}
+
+.contact{
+	opacity: 0;
+	color: #2980b9;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	-webkit-animation-name: letsFadeIn;
+	-webkit-animation-duration: 1s;
+ 	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-fill-mode: forwards; 
+ 	-webkit-animation-delay: 2s;
+
+ 	-moz-animation-name: letsFadeIn;
+	-moz-animation-duration: 1s;
+ 	-moz-animation-iteration-count: 1;
+ 	-moz-animation-fill-mode: forwards; 
+ 	-moz-animation-delay: 2s;
+
+ 	-o-animation-name: letsFadeIn;
+	-o-animation-duration: 1s;
+ 	-o-animation-iteration-count: 1;
+ 	-o-animation-fill-mode: forwards; 
+ 	-o-animation-delay: 2s;
+
+ 	animation-name: letsFadeIn;
+	animation-duration: 1s;
+ 	animation-iteration-count: 1;
+ 	animation-fill-mode: forwards; 
+ 	animation-delay: 2s;
+}
+
+@-webkit-keyframes letsFadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-moz-keyframes letsFadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-o-keyframes letsFadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes letsFadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}

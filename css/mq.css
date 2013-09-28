@@ -1,0 +1,5 @@
+@media screen and (max-width: 900px) { 
+	.container{ width: 400px; }
+	h3, .tooltip{ display: none; }
+	.why-css-wrapper{ opacity: 1; }
+}
